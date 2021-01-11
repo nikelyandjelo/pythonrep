@@ -1,0 +1,28 @@
+from tkinter import*
+root = Tk()
+e1=Entry()
+e2=Entry()
+e3=Entry()
+e4=Entry()
+l1=Label(text='p1')
+l2=Label(text='p2')
+l3=Label(text='pribil 1-go:')
+l4=Label(text='pribil 2-go:')
+def func():
+    p1=float(e1.get())
+    p2=float(e1.get())
+    n=80*p2+(10000+80*p2)*p2/100*0.8
+    s=160*p1
+    e4.insert(0,float(n))
+    e3.insert(0,float(s))
+b1=Button(text="result",command=func)
+l1.pack()
+e1.pack()
+l2.pack()
+e2.pack()
+l3.pack()
+e3.pack()
+l4.pack()
+e4.pack()
+b1.pack(side=RIGHT)
+root.mainloop()
